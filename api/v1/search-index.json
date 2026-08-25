@@ -1,0 +1,11 @@
+{
+  "byId": {
+    "ipo-calendar": {
+      "id": "ipo-calendar",
+      "name": "IPO Calendar",
+      "status": "scaffold",
+      "source": "BSE/NSE public data"
+    }
+  },
+  "searchableFields": []
+}
