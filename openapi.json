@@ -1,0 +1,73 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "IPO Calendar",
+    "description": "Current and upcoming IPOs with dates, price bands, and lot sizes",
+    "version": "1.0.0",
+    "license": {
+      "name": "CC-BY-4.0"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chirag127.github.io/ipo-calendar",
+      "description": "GitHub Pages"
+    }
+  ],
+  "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "IPO Calendar data",
+        "description": "Current and upcoming IPOs with dates, price bands, and lot sizes",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/ipo/current": {
+      "get": {
+        "summary": "IPO Calendar",
+        "description": "Current and upcoming IPOs with dates, price bands, and lot sizes",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/ipo/upcoming": {
+      "get": {
+        "summary": "IPO Calendar",
+        "description": "Current and upcoming IPOs with dates, price bands, and lot sizes",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
